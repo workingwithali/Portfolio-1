@@ -112,7 +112,7 @@ img {
     object-fit: cover;
 }
 
-@media screen and (max-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 767px) {
     .container {
         width: var(--container-width-md);
     }
@@ -122,12 +122,21 @@ img {
     }
 }
 
-@media screen and (max-width: 600px) {
+@media only screen and (min-width: 320px) and (max-width: 480px) {
     .container {
         width: var(--container-width-ms);
     }
 
     section>h2 {
         margin-bottom: 2rem;
+    }
+
+    .btn {
+        padding: 0.75rem 1rem;
+        border-radius: 1rem;
+    }
+
+    h1 {
+        font-size: 2.75rem;
     }
 }

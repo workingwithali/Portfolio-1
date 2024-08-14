@@ -1,20 +1,23 @@
-header{
+header {
     height: 100vh;
     padding-top: 1rem;
     overflow: hidden;
 }
-.header_container{
+
+.header_container {
     text-align: center;
-    height: 100% ;
+    height: 100%;
     position: relative;
 }
-.cta{
+
+.cta {
     margin-top: 1rem;
     display: flex;
     gap: 1.2rem;
-    justify-content: center ;
+    justify-content: center;
 }
-.header_socials{
+
+.header_socials {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -23,24 +26,27 @@ header{
     left: 0;
     bottom: 0.3rem;
 }
-.header_socials::after{
-    content:"";
+
+.header_socials::after {
+    content: "";
     width: 1px;
-    height:5rem;
+    height: 5rem;
     background: var(--color-primary);
 }
-.me{
-    background: linear-gradient(var(--color-primary),transparent );
+
+.me {
+    background: linear-gradient(var(--color-primary), transparent);
     width: 15rem;
     position: absolute;
     left: calc(50%-11rem);
     margin-top: 2rem;
     border-radius: 12rem 12rem 0 0;
     overflow: hidden;
-    padding: 2rem 1.5rem 1.5rem 1.5rem ;
+    padding: 2rem 1.5rem 1.5rem 1.5rem;
 
 }
-.scroll_down{
+
+.scroll_down {
     position: absolute;
     right: -2.3rem;
     bottom: 4rem;
@@ -48,25 +54,59 @@ header{
     font-weight: 300;
     font-size: 0.9rem;
 }
-.dis{
+
+.dis {
     display: flex;
     justify-content: space-around;
 }
-@media screen and (max-width: 700px) {
-   
-    
+
+/* For small devices (phones, 320px and up) */
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    /* Your CSS for mobile devices */
+    header {
+        padding-top: 5rem;
+    }
+
+    .cta {
+        margin-top: 3rem;
+        gap: 2.5rem;
+    }
+
+    .me {
+        width: 12rem;
+        margin-top: 3rem;
+        padding: 3rem 1.5rem 0.5rem 1.5rem;
+        bottom: 0;
+    }
+
+    .btn {
+        padding: 1.2rem 1.5rem;
+    }
 }
 
-@media screen and (max-width: 320px) {
-    header{
-        height: 100vh;
-        
+/* For medium devices (phones, 481px and up) */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+
+    /* Your CSS for larger mobile devices */
+    header {
+        padding-top: 5rem;
     }
-    .dis{
-        bottom: 1rem;
+
+    .cta {
+        margin-top: 3rem;
+        gap: 2.5rem;
     }
-    .header_socials{
-        /* display: none; */
+
+    .me {
+        width: 12rem;
+        margin-top: 3rem;
+        padding: 3rem 1.5rem 0.5rem 1.5rem;
+        bottom: 0;
     }
-   
+
+    .btn {
+        padding: 1.2rem 1.5rem;
+    }
+
 }
