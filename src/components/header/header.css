@@ -89,8 +89,5 @@ header {
 @media only screen and (min-width: 481px) and (max-width: 767px) {
 
     /* Your CSS for larger mobile devices */
-    header {
-        padding-top: 5rem;
-    }
 
 }
